@@ -79,7 +79,7 @@ Citizen.CreateThread(function()
                 {
                     event = "mt-UwUCafe:client:FrigorificoIngredientes",
                     icon = "fas fa-laptop",
-                    label = "Ingridents Fridge",
+                    label = "Ingredients Fridge",
                     job = "uwu",
                 },
             },
@@ -179,7 +179,7 @@ Citizen.CreateThread(function()
     }, {
         options = {
             {
-            event = "fivem-appearance:pickNewOutfit",
+            event = "qb-clothing:client:openOutfitMenu",
             icon = "far fa-tshirt",
             label = "Change Clothes",
             },
