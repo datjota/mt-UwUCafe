@@ -553,3 +553,9 @@ AddEventHandler("mt-UwUCafe:server:FaturarPlayer", function(playerId, amount)
             TriggerClientEvent('QBCore:Notify', source, 'No access', 'error')
         end
 end)
+
+RegisterNetEvent('mt-UwUCafe:Server:AddItem', function(item, amount)
+    local Player = QBCore.Functions.GetPlayer(source)
+
+    Player.Functions.AddItem(item, amount)
+end)
