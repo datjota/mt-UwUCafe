@@ -4,7 +4,7 @@ game 'gta5'
 
 author 'Marttins#8421 (mt scripts)'
 
-description 'mt-UwUCafe'
+description 'mt-UwUCafe, Translated by [MT]Michel'
 
 version '0.1'
 
