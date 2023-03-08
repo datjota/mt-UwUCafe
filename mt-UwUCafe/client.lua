@@ -1,7 +1,7 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 local spawned = false
 
---- Cenas e coisas para o Job -------------
+--- Scenes and stuff for Job -------------
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
     QBCore.Functions.GetPlayerData(function(PlayerData)
@@ -24,7 +24,7 @@ RegisterNetEvent("mt-UwUCafe:client:Servico", function()
 end)
 
 ---------------------------------
------ Blip no mapa --------------
+----- Config Blip to set it on ur map/gps --------------
 
 Citizen.CreateThread(function()
     local blip = AddBlipForCoord(462.2, -693.88, 26.44)
@@ -55,7 +55,7 @@ end)
 --------------------
 ----- Menus --------
 
-RegisterNetEvent('mt-UwUCafe:client:MenuComidas', function() -- Menu para fazer comidas
+RegisterNetEvent('mt-UwUCafe:client:MenuComidas', function() -- Menu to make food
     exports['qb-menu']:openMenu({
         {
             header = "Food UwU Cafe",
@@ -69,78 +69,78 @@ RegisterNetEvent('mt-UwUCafe:client:MenuComidas', function() -- Menu para fazer 
             }
         },
         {
-            header = "Straberry Cupcake",
-            txt = "Ingredients: <br> - 1 Milk <br> - 1 Buter <br> - 1 Flouer <br> - 1 Straberry Package",
+            header = "Strawberry Cupcake",
+            txt = "Ingredients: <br> - 1 Milk <br> - 1 Butter <br> - 1 Flouwer <br> - 1 Strawberry Package",
             params = {
                 event = "mt-UwUCafe:client:FazerCupcakeMorango",
             }
         },
         {
-            header = "Chocolat Cupcake",
-            txt = "Ingredients: <br> - 1 Milk <br> - 1 Buter <br> - 1 Flouer <br> - 1 Chocolat",
+            header = "Chocolate Cupcake",
+            txt = "Ingredients: <br> - 1 Milk <br> - 1 Butter <br> - 1 Flouwer <br> - 1 Chocolate",
             params = {
                 event = "mt-UwUCafe:client:FazerCupcakeChocolate",
             }
         },
         {
             header = "Limon Cupcake",
-            txt = "Ingredients: <br> - 1 Milk <br> - 1 Buter <br> - 1 Flouer <br> - 1 Limon",
+            txt = "Ingredients: <br> - 1 Milk <br> - 1 Buter <br> - 1 Flouwer <br> - 1 Limon",
             params = {
                 event = "mt-UwUCafe:client:FazerCupcakeLimao",
             }
         },
         {
             header = "Straberry Ice Cream",
-            txt = "Ingredients: <br> - 1 Cream <br> - 1 Condensed milk <br> - 1 Straberry Package",
+            txt = "Ingredients: <br> - 1 Cream <br> - 1 Condensed milk <br> - 1 Strawberry Package",
             params = {
                 event = "mt-UwUCafe:client:FazerGeladoMorango",
             }
         },
         {
-            header = "Chocolat Ice Cream",
-            txt = "Ingredients: <br> - 1 Cream <br> - 1 Condensed milk <br> - 1 Chocolat",
+            header = "Chocolate Ice Cream",
+            txt = "Ingredients: <br> - 1 Cream <br> - 1 Condensed milk <br> - 1 Chocolate",
             params = {
                 event = "mt-UwUCafe:client:FazerGeladoChocolate",
             }
         },
         {
-            header = "Canilla Ice Cream",
-            txt = "Ingredients: <br> - 1 Cream <br> - 1 Condensed milk <br> - 1 Extrato de baunilha",
+            header = "Vanilla Ice Cream",
+            txt = "Ingredients: <br> - 1 Cream <br> - 1 Condensed milk <br> - 1 Vanilla extract",
             params = {
                 event = "mt-UwUCafe:client:FazerGeladoBaunilha",
             }
         },
         {
             header = "Nutela Pancake",
-            txt = "Ingredients: <br> - 1 Flouer <br> - 1 Milk <br> - 1 Pacote de açucar <br> - 1 Nutela",
+            txt = "Ingredients: <br> - 1 Flouwer <br> - 1 Milk <br> - 1 Sugar pack <br> - 1 Nutela",
             params = {
                 event = "mt-UwUCafe:client:FazerPanquencaNutela",
             }
         },
         {
             header = "Oreo Pancake",
-            txt = "Ingredients: <br> - 1 Flouer <br> - 1 Milk <br> - 1 Pacote de açucar <br> - 1 Oreo",
+            txt = "Ingredients: <br> - 1 Flouwer <br> - 1 Milk <br> - 1 Sugar pack <br> - 1 Oreo",
             params = {
                 event = "mt-UwUCafe:client:FazerPanquencaOreo",
             }
         },
         {
             header = "Chocolat Muffin",
-            txt = "Ingredients: <br> - 1 Flouer <br> - 1 Milk <br> - 1 Chocolat",
+            txt = "Ingredients: <br> - 1 Flouwer <br> - 1 Milk <br> - 1 Chocolate",
             params = {
                 event = "mt-UwUCafe:client:FazerMuffinChocolate",
             }
         },
         {
             header = "Chicken pastel",
-            txt = "Ingredients: <br> - 1 Flouer <br> - 1 Buter <br> - 1 Chicken",
+            txt = "Ingredients: <br> - 1 Flouwer <br> - 1 Butter <br> - 1 Chicken",
             params = {
                 event = "mt-UwUCafe:client:FazerPastelFrango",
             }
         },
         {
             header = "Nutela Waffle",
-            txt = "Ingredients: <br> - 1 Flouer <br> - 1 Milk <br> - 1 Nutela",
+            txt = "Ingredients: <br> - 1 Flouwer <br> - 1 Milk <br> - 1 Nutela",
             params = {
                 event = "mt-UwUCafe:client:FazerWaffleNutela",
             }
@@ -148,7 +148,7 @@ RegisterNetEvent('mt-UwUCafe:client:MenuComidas', function() -- Menu para fazer 
     })
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:MenuBebidas', function() -- Menu para fazer bebidas
+RegisterNetEvent('mt-UwUCafe:client:MenuBebidas', function() -- Menu for making drinks
     exports['qb-menu']:openMenu({
         {
             header = "Drinks UwU Cafe",
@@ -177,14 +177,14 @@ RegisterNetEvent('mt-UwUCafe:client:MenuBebidas', function() -- Menu para fazer 
         },
         {
             header = "Blackberry Bubble Tea",
-            txt = "Ingredients: <br> - 1 Caixa de amoras <br> - 1 Water Bottle",
+            txt = "Ingredients: <br> - 1 box of blackberries <br> - 1 Water Bottle",
             params = {
                 event = "mt-UwUCafe:client:FazerBubbleTeaAmora",
             }
         },
         {
             header = "Straberry Bubble Tea",
-            txt = "Ingredients: <br> - 1 Straberry Package <br> - 1 Water Bottle",
+            txt = "Ingredients: <br> - 1 Strawberry Package <br> - 1 Water Bottle",
             params = {
                 event = "mt-UwUCafe:client:FazerBubbleTeaMorango",
             }
@@ -198,14 +198,14 @@ RegisterNetEvent('mt-UwUCafe:client:MenuBebidas', function() -- Menu para fazer 
         },
         {
             header = "Straberry Milkshake",
-            txt = "Ingredients: <br> - 1 Straberry Package <br> - 1 Milk",
+            txt = "Ingredients: <br> - 1 Strawberry Package <br> - 1 Milk",
             params = {
                 event = "mt-UwUCafe:client:FazerMilkshakeMorango",
             }
         },
         {
             header = "Chocolat Milkshake",
-            txt = "Ingredients: <br> - 1 Chocolat <br> - 1 Milk",
+            txt = "Ingredients: <br> - 1 Chocolate <br> - 1 Milk",
             params = {
                 event = "mt-UwUCafe:client:FazerMilkshakeChocolate",
             }
@@ -213,7 +213,7 @@ RegisterNetEvent('mt-UwUCafe:client:MenuBebidas', function() -- Menu para fazer 
     })
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:MenuLoja', function() -- Menu para o vendedor de ingrediente
+RegisterNetEvent('mt-UwUCafe:client:MenuLoja', function() -- Menu to the ingredient vendor
     if Config.UsarPed == true then
     exports['qb-menu']:openMenu({
         {
@@ -235,35 +235,35 @@ RegisterNetEvent('mt-UwUCafe:client:MenuLoja', function() -- Menu para o vendedo
             }
         },
         {
-            header = "Buter",
+            header = "Butter",
             txt = "Price: 10x per 20$",
             params = {
                 event = "mt-UwUCafe:client:ComprarManteiga",
             }
         },
         {
-            header = "Flouer",
+            header = "Flouwer",
             txt = "Price: 10x per 20$",
             params = {
                 event = "mt-UwUCafe:client:ComprarFarinha",
             }
         },
         {
-            header = "Straberry Package",
+            header = "Strawberry Package",
             txt = "Price: 10x per 50$",
             params = {
                 event = "mt-UwUCafe:client:ComprarMorangos",
             }
         },
         {
-            header = "Chocolat",
+            header = "Chocolate",
             txt = "Price: 10x per 50$",
             params = {
                 event = "mt-UwUCafe:client:ComprarChocolate",
             }
         },
         {
-            header = "Limão",
+            header = "Lemon",
             txt = "Price: 10x per 30$",
             params = {
                 event = "mt-UwUCafe:client:ComprarLimao",
@@ -284,28 +284,28 @@ RegisterNetEvent('mt-UwUCafe:client:MenuLoja', function() -- Menu para o vendedo
             }
         },
         {
-            header = "Extrato de baunilha",
+            header = "Vanilla extract",
             txt = "Price: 10x per 50$",
             params = {
                 event = "mt-UwUCafe:client:ComprarBaunilha",
             }
         },
         {
-            header = "Pacote de açucar",
+            header = "Sugar pack",
             txt = "Price: 10x per 20$",
             params = {
                 event = "mt-UwUCafe:client:ComprarAcucar",
             }
         },
         {
-            header = "Frasco de nutela",
+            header = "nutella bottle",
             txt = "Price: 10x per 50$",
             params = {
                 event = "mt-UwUCafe:client:ComprarNutela",
             }
         },
         {
-            header = "Pacote de oreo",
+            header = "oreo pack",
             txt = "Price: 10x per 50$",
             params = {
                 event = "mt-UwUCafe:client:ComprarOreo",
@@ -319,21 +319,21 @@ RegisterNetEvent('mt-UwUCafe:client:MenuLoja', function() -- Menu para o vendedo
             }
         },
         {
-            header = "Extrato de menta",
+            header = "Mint extract",
             txt = "Price: 10x per 50$",
             params = {
                 event = "mt-UwUCafe:client:ComprarMenta",
             }
         },
         {
-            header = "Caixa de amoras",
+            header = "box of blackberries",
             txt = "Price: 10x per 50$",
             params = {
                 event = "mt-UwUCafe:client:ComprarAmoras",
             }
         },
         {
-            header = "Frango",
+            header = "Chicken",
             txt = "Price: 10x per 50$",
             params = {
                 event = "mt-UwUCafe:client:ComprarFrango",
@@ -344,9 +344,9 @@ RegisterNetEvent('mt-UwUCafe:client:MenuLoja', function() -- Menu para o vendedo
 end)
 
 ---------------------------------------
------------ Fazer comidas -------------
+----------- Making food -------------
 
-RegisterNetEvent('mt-UwUCafe:client:FazerCupcakeMorango', function() -- Fazer Cupcake de morango
+RegisterNetEvent('mt-UwUCafe:client:FazerCupcakeMorango', function() -- Make Strawberry Cupcake
     TriggerEvent('animations:client:EmoteCommandStart', {"mechanic"})
     QBCore.Functions.Progressbar('cupcake_morango', 'MAKING A CUPCAKE...', 5000, false, true, {
         disableMovement = true,
@@ -359,7 +359,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerCupcakeMorango', function() -- Fazer Cu
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerCupcakeChocolate', function() -- Fazer Cupcake de chocolate
+RegisterNetEvent('mt-UwUCafe:client:FazerCupcakeChocolate', function() -- Make Chocolate Cupcake
     TriggerEvent('animations:client:EmoteCommandStart', {"mechanic"})
     QBCore.Functions.Progressbar('cupcake_chocolate', 'MAKING A CUPCAKE...', 5000, false, true, {
         disableMovement = true,
@@ -372,7 +372,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerCupcakeChocolate', function() -- Fazer 
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerCupcakeLimao', function() -- Fazer Cupcake de limao
+RegisterNetEvent('mt-UwUCafe:client:FazerCupcakeLimao', function() -- Make Lemon Cupcake
     TriggerEvent('animations:client:EmoteCommandStart', {"mechanic"})
     QBCore.Functions.Progressbar('cupcake_limao', 'MAKING A CUPCAKE...', 5000, false, true, {
         disableMovement = true,
@@ -385,7 +385,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerCupcakeLimao', function() -- Fazer Cupc
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerGeladoMorango', function() -- Fazer Gelado de morango
+RegisterNetEvent('mt-UwUCafe:client:FazerGeladoMorango', function() -- Make strawberry ice cream
     TriggerEvent('animations:client:EmoteCommandStart', {"mechanic"})
     QBCore.Functions.Progressbar('gelado_morango', 'MAKING A ICE CREAM...', 5000, false, true, {
         disableMovement = true,
@@ -398,7 +398,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerGeladoMorango', function() -- Fazer Gel
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerGeladoChocolate', function() -- Fazer Gelado de chocolate
+RegisterNetEvent('mt-UwUCafe:client:FazerGeladoChocolate', function() -- Make chocolate ice cream
     TriggerEvent('animations:client:EmoteCommandStart', {"mechanic"})
     QBCore.Functions.Progressbar('gelado_chocolate', 'MAKING A ICE CREAM...', 5000, false, true, {
         disableMovement = true,
@@ -411,7 +411,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerGeladoChocolate', function() -- Fazer G
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerGeladoBaunilha', function() -- Fazer Gelado de baunilha
+RegisterNetEvent('mt-UwUCafe:client:FazerGeladoBaunilha', function() -- Make vanilla ice cream
     TriggerEvent('animations:client:EmoteCommandStart', {"mechanic"})
     QBCore.Functions.Progressbar('gelado_baunilha', 'MAKING A ICE CREAM...', 5000, false, true, {
         disableMovement = true,
@@ -424,7 +424,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerGeladoBaunilha', function() -- Fazer Ge
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerPanquencaNutela', function() -- Fazer Panqueca de nutela
+RegisterNetEvent('mt-UwUCafe:client:FazerPanquencaNutela', function() -- Make nutella pancake
     TriggerEvent('animations:client:EmoteCommandStart', {"mechanic"})
     QBCore.Functions.Progressbar('panqueca_nutela', 'MAKING A PANCAKE...', 5000, false, true, {
         disableMovement = true,
@@ -437,7 +437,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerPanquencaNutela', function() -- Fazer P
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerPanquencaOreo', function() -- Fazer Panqueca de oreo
+RegisterNetEvent('mt-UwUCafe:client:FazerPanquencaOreo', function() -- Make oreo pancake
     TriggerEvent('animations:client:EmoteCommandStart', {"mechanic"})
     QBCore.Functions.Progressbar('panqueca_oreo', 'MAKING A PANCAKE...', 5000, false, true, {
         disableMovement = true,
@@ -450,7 +450,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerPanquencaOreo', function() -- Fazer Pan
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerMuffinChocolate', function() -- Fazer Panqueca de oreo
+RegisterNetEvent('mt-UwUCafe:client:FazerMuffinChocolate', function() -- Make oreo pancake
     TriggerEvent('animations:client:EmoteCommandStart', {"mechanic"})
     QBCore.Functions.Progressbar('muffin_chocolate', 'MAKING A MUFFIN...', 5000, false, true, {
         disableMovement = true,
@@ -463,7 +463,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerMuffinChocolate', function() -- Fazer P
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerPastelFrango', function() -- Fazer Panqueca de oreo
+RegisterNetEvent('mt-UwUCafe:client:FazerPastelFrango', function() -- Make Chicken Pastel
     TriggerEvent('animations:client:EmoteCommandStart', {"mechanic"})
     QBCore.Functions.Progressbar('pastel_frango', 'MAKING A PASTEL...', 5000, false, true, {
         disableMovement = true,
@@ -476,7 +476,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerPastelFrango', function() -- Fazer Panq
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerWaffleNutela', function() -- Fazer Panqueca de oreo
+RegisterNetEvent('mt-UwUCafe:client:FazerWaffleNutela', function() -- Make Nutela Waffle
     TriggerEvent('animations:client:EmoteCommandStart', {"mechanic"})
     QBCore.Functions.Progressbar('waffle_nutela', 'MAKING A WAFFLE...', 5000, false, true, {
         disableMovement = true,
@@ -490,9 +490,9 @@ RegisterNetEvent('mt-UwUCafe:client:FazerWaffleNutela', function() -- Fazer Panq
 end)
 
 ---------------------------------------
---------- Fazer bebidas ---------------
+--------- Making drinks ---------------
 
-RegisterNetEvent('mt-UwUCafe:client:FazerCafe', function() -- Fazer um cafe
+RegisterNetEvent('mt-UwUCafe:client:FazerCafe', function() -- Make a coffee
     TriggerEvent('animations:client:EmoteCommandStart', {"handshake"})
     QBCore.Functions.Progressbar('fazer_cafe', 'TAKING A COFFEE...', 5000, false, true, {
         disableMovement = true,
@@ -505,7 +505,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerCafe', function() -- Fazer um cafe
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerLatte', function() -- Fazer um Latte
+RegisterNetEvent('mt-UwUCafe:client:FazerLatte', function() -- Make a Latte
     TriggerEvent('animations:client:EmoteCommandStart', {"handshake"})
     QBCore.Functions.Progressbar('fazer_latte', 'TAKING A LATTE...', 5000, false, true, {
         disableMovement = true,
@@ -518,7 +518,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerLatte', function() -- Fazer um Latte
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerBubbleTeaAmora', function() -- Fazer um Bubble tea de amora
+RegisterNetEvent('mt-UwUCafe:client:FazerBubbleTeaAmora', function() -- Make a blackberry bubble tea
     TriggerEvent('animations:client:EmoteCommandStart', {"handshake"})
     QBCore.Functions.Progressbar('bubble_amora', 'TAKING A BUBBLE TEA...', 5000, false, true, {
         disableMovement = true,
@@ -531,7 +531,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerBubbleTeaAmora', function() -- Fazer um
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerBubbleTeaMorango', function() -- Fazer um Bubble tea de morango
+RegisterNetEvent('mt-UwUCafe:client:FazerBubbleTeaMorango', function() -- Make a Strawberry Bubble Tea
     TriggerEvent('animations:client:EmoteCommandStart', {"handshake"})
     QBCore.Functions.Progressbar('bubble_morango', 'TAKING A BUBBLE TEA...', 5000, false, true, {
         disableMovement = true,
@@ -544,7 +544,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerBubbleTeaMorango', function() -- Fazer 
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerBubbleTeaMenta', function() -- Fazer um Bubble tea de menta
+RegisterNetEvent('mt-UwUCafe:client:FazerBubbleTeaMenta', function() -- Make a mint bubble tea
     TriggerEvent('animations:client:EmoteCommandStart', {"handshake"})
     QBCore.Functions.Progressbar('bubble_menta', 'TAKING A BUBBLE TEA...', 5000, false, true, {
         disableMovement = true,
@@ -557,7 +557,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerBubbleTeaMenta', function() -- Fazer um
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerMilkshakeMorango', function() -- Fazer um Bubble tea de menta
+RegisterNetEvent('mt-UwUCafe:client:FazerMilkshakeMorango', function() -- Make a mint bubble tea
     TriggerEvent('animations:client:EmoteCommandStart', {"handshake"})
     QBCore.Functions.Progressbar('milkshake_morango', 'TAKING A MILKSHAKE...', 5000, false, true, {
         disableMovement = true,
@@ -570,7 +570,7 @@ RegisterNetEvent('mt-UwUCafe:client:FazerMilkshakeMorango', function() -- Fazer 
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FazerMilkshakeChocolate', function() -- Fazer um Bubble tea de menta
+RegisterNetEvent('mt-UwUCafe:client:FazerMilkshakeChocolate', function() -- Make a mint bubble tea
     TriggerEvent('animations:client:EmoteCommandStart', {"handshake"})
     QBCore.Functions.Progressbar('milkshake_chocolate', 'TAKING A MILKSHAKE...', 5000, false, true, {
         disableMovement = true,
@@ -586,7 +586,7 @@ end)
 --------------------------------
 ------- Stashes ----------------
 
-RegisterNetEvent('mt-UwUCafe:client:FrigorificoComida', function() -- Frigorifico para comida (feita)
+RegisterNetEvent('mt-UwUCafe:client:FrigorificoComida', function() -- Refrigerator for food (made)
     TriggerEvent("inventory:client:SetCurrentStash", "frigorificouwu")
     TriggerServerEvent("inventory:server:OpenInventory", "stash", "frigorificouwu", {
         maxweight = 250000,
@@ -594,7 +594,7 @@ RegisterNetEvent('mt-UwUCafe:client:FrigorificoComida', function() -- Frigorific
     })
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:FrigorificoIngredientes', function() -- Frigorifico para Ingredients
+RegisterNetEvent('mt-UwUCafe:client:FrigorificoIngredientes', function() -- Fridge for Ingredients
     TriggerEvent("inventory:client:SetCurrentStash", "FrigorificoIngredientes")
     TriggerServerEvent("inventory:server:OpenInventory", "stash", "FrigorificoIngredientes", {
         maxweight = 500000,
@@ -602,7 +602,7 @@ RegisterNetEvent('mt-UwUCafe:client:FrigorificoIngredientes', function() -- Frig
     })
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:Balcao', function() -- Frigorifico para comida (feita)
+RegisterNetEvent('mt-UwUCafe:client:Balcao', function() -- Refrigerator for food (made)
     TriggerEvent("inventory:client:SetCurrentStash", "balcaouwu")
     TriggerServerEvent("inventory:server:OpenInventory", "stash", "balcaouwu", {
         maxweight = 10000,
@@ -610,7 +610,7 @@ RegisterNetEvent('mt-UwUCafe:client:Balcao', function() -- Frigorifico para comi
     })
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:Tabuleiro1', function() -- tabuleiro1
+RegisterNetEvent('mt-UwUCafe:client:Tabuleiro1', function() -- board1
     TriggerEvent("inventory:client:SetCurrentStash", "TabuleiroUwU1")
     TriggerServerEvent("inventory:server:OpenInventory", "stash", "TabuleiroUwU1", {
         maxweight = 20000,
@@ -618,7 +618,7 @@ RegisterNetEvent('mt-UwUCafe:client:Tabuleiro1', function() -- tabuleiro1
     })
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:Tabuleiro2', function() -- tabuleiro2
+RegisterNetEvent('mt-UwUCafe:client:Tabuleiro2', function() -- board2
     TriggerEvent("inventory:client:SetCurrentStash", "TabuleiroUwU2")
     TriggerServerEvent("inventory:server:OpenInventory", "stash", "TabuleiroUwU2", {
         maxweight = 20000,
@@ -627,7 +627,7 @@ RegisterNetEvent('mt-UwUCafe:client:Tabuleiro2', function() -- tabuleiro2
 end)
 
 ---------------------------
----- Spawn Gatos ----------
+---- Spawn Cats ----------
 
 CreateThread(function()
     local spot1 = CircleZone:Create(vector3(-580.54, -1064.7, 22.79), 10.0, {
@@ -679,9 +679,9 @@ function DoRequestAnimSet(anim)
 end
 
 ------------------------------------
------ Usar comidas/bebidas ---------
+----- Use food/drinks ---------
 
-RegisterNetEvent('mt-UwUCafe:client:ComerCupcake', function() -- Comer Cupcake
+RegisterNetEvent('mt-UwUCafe:client:ComerCupcake', function() -- Eat Cupcake
     TriggerEvent('animations:client:EmoteCommandStart', {"uwusandy"})
     QBCore.Functions.Progressbar('comer_cupcake', 'EATING A CUPCAKE...', 5000, false, true, {
         disableMovement = false,
@@ -695,7 +695,7 @@ RegisterNetEvent('mt-UwUCafe:client:ComerCupcake', function() -- Comer Cupcake
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:ComerPastel', function() -- Comer Cupcake
+RegisterNetEvent('mt-UwUCafe:client:ComerPastel', function() -- Eat Chicken Pastel
     TriggerEvent('animations:client:EmoteCommandStart', {"sandwich"})
     QBCore.Functions.Progressbar('comer_pastel', 'EATING A PASTEL...', 5000, false, true, {
         disableMovement = false,
@@ -709,7 +709,7 @@ RegisterNetEvent('mt-UwUCafe:client:ComerPastel', function() -- Comer Cupcake
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:ComerMuffin', function() -- Comer Cupcake
+RegisterNetEvent('mt-UwUCafe:client:ComerMuffin', function() -- Eat muffin
     TriggerEvent('animations:client:EmoteCommandStart', {"uwusandy"})
     QBCore.Functions.Progressbar('comer_muffin', 'EATING A MUFFIN...', 5000, false, true, {
         disableMovement = false,
@@ -723,7 +723,7 @@ RegisterNetEvent('mt-UwUCafe:client:ComerMuffin', function() -- Comer Cupcake
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:ComerWaffle', function() -- Comer Cupcake
+RegisterNetEvent('mt-UwUCafe:client:ComerWaffle', function() -- Eat Waffle
     TriggerEvent('animations:client:EmoteCommandStart', {"sandwich"})
     QBCore.Functions.Progressbar('comer_waffle', 'EATING A WAFFLE...', 5000, false, true, {
         disableMovement = false,
@@ -737,7 +737,7 @@ RegisterNetEvent('mt-UwUCafe:client:ComerWaffle', function() -- Comer Cupcake
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:ComerGelado', function() -- Comer gelado
+RegisterNetEvent('mt-UwUCafe:client:ComerGelado', function() -- Eat icecream
     TriggerEvent('animations:client:EmoteCommandStart', {"uwusandy"})
     QBCore.Functions.Progressbar('comer_gelado', 'EATING A GELADO...', 5000, false, true, {
         disableMovement = false,
@@ -751,7 +751,7 @@ RegisterNetEvent('mt-UwUCafe:client:ComerGelado', function() -- Comer gelado
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:ComerPanqueca', function() -- Comer panqueca
+RegisterNetEvent('mt-UwUCafe:client:ComerPanqueca', function() -- Eat pancake
     TriggerEvent('animations:client:EmoteCommandStart', {"sandwich"})
     QBCore.Functions.Progressbar('comer_panqueca', 'DRINKING A PANCAKE...', 5000, false, true, {
         disableMovement = false,
@@ -765,7 +765,7 @@ RegisterNetEvent('mt-UwUCafe:client:ComerPanqueca', function() -- Comer panqueca
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:BeberBubbleTea', function() -- Comer panqueca
+RegisterNetEvent('mt-UwUCafe:client:BeberBubbleTea', function() -- Drink bubble Tea
     TriggerEvent('animations:client:EmoteCommandStart', {"cup"})
     QBCore.Functions.Progressbar('beber_bubbletea', 'DRINKING A BUBBLE TEA...', 5000, false, true, {
         disableMovement = false,
@@ -778,7 +778,7 @@ RegisterNetEvent('mt-UwUCafe:client:BeberBubbleTea', function() -- Comer panquec
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:BeberMilkshake', function() -- Comer panqueca
+RegisterNetEvent('mt-UwUCafe:client:BeberMilkshake', function() -- Drink Milkshake
     TriggerEvent('animations:client:EmoteCommandStart', {"cup"})
     QBCore.Functions.Progressbar('beber_milkshake', 'DRINKING A MILKSHAKE...', 5000, false, true, {
         disableMovement = false,
@@ -791,7 +791,7 @@ RegisterNetEvent('mt-UwUCafe:client:BeberMilkshake', function() -- Comer panquec
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:BeberCafe', function() -- Comer panqueca
+RegisterNetEvent('mt-UwUCafe:client:BeberCafe', function() -- Drink Coffee
     TriggerEvent('animations:client:EmoteCommandStart', {"coffee"})
     QBCore.Functions.Progressbar('beber_cafe', 'DRINKING A COFFEE...', 5000, false, true, {
         disableMovement = false,
@@ -805,7 +805,7 @@ RegisterNetEvent('mt-UwUCafe:client:BeberCafe', function() -- Comer panqueca
     end)
 end)
 
-RegisterNetEvent('mt-UwUCafe:client:BeberLatte', function() -- Comer panqueca
+RegisterNetEvent('mt-UwUCafe:client:BeberLatte', function() -- Drink Latte
     TriggerEvent('animations:client:EmoteCommandStart', {"coffee"})
     QBCore.Functions.Progressbar('beber_latte', 'DRINKING A LATTE...', 5000, false, true, {
         disableMovement = false,
@@ -820,7 +820,7 @@ RegisterNetEvent('mt-UwUCafe:client:BeberLatte', function() -- Comer panqueca
 end)
 
 ------------------------------------------
------- Spawn ped venda alimentos ---------
+------ Spawn ped selling food ---------
 
 local IngredientsPed = {
     Config.Ped
@@ -1091,7 +1091,7 @@ RegisterNetEvent('mt-UwUCafe:client:ComprarFrango', function()
 end)
 
 ----------------------------------
---------- Acariciar Gatos --------
+--------- Pet Cats --------
 
 RegisterNetEvent('mt-UwUCafe:client:AcariciarGato', function()
     TriggerEvent('animations:client:EmoteCommandStart', {"mechanic3"})
@@ -1107,7 +1107,7 @@ RegisterNetEvent('mt-UwUCafe:client:AcariciarGato', function()
 end)
 
 ---------------------------------
---- Ver ementa ------------------
+--- See menu ------------------
 
 RegisterNetEvent("mt-UwUCafe:client:VerEmenta", function()
     exports['qb-menu']:openMenu({
@@ -1181,21 +1181,21 @@ RegisterNetEvent('mt-UwUCafe:client:EmentaBebidas', function()
             }
         },
         {
-            header = "Straberry Bubble Tea",
+            header = "Strawberry Bubble Tea",
             txt = "Price: 25$",
             params = {
                 event = "mt-UwUCafe:client:EmentaBebidas",
             }
         },
         {
-            header = "Straberry Milkshake",
+            header = "Strawberry Milkshake",
             txt = "Price: 25$",
             params = {
                 event = "mt-UwUCafe:client:EmentaBebidas",
             }
         },
         {
-            header = "Chocolat Milkshake",
+            header = "Chocolate Milkshake",
             txt = "Price: 25$",
             params = {
                 event = "mt-UwUCafe:client:EmentaBebidas",
@@ -1218,14 +1218,14 @@ RegisterNetEvent('mt-UwUCafe:client:EmentaComidas', function()
             }
         },
         {
-            header = "Straberry Cupcake",
+            header = "Strawberry Cupcake",
             txt = "Price: 50$",
             params = {
                 event = "mt-UwUCafe:client:EmentaComidas",
             }
         },
         {
-            header = "Chocolat Cupcake",
+            header = "Chocolate Cupcake",
             txt = "Price: 50$",
             params = {
                 event = "mt-UwUCafe:client:EmentaComidas",
@@ -1239,7 +1239,7 @@ RegisterNetEvent('mt-UwUCafe:client:EmentaComidas', function()
             }
         },
         {
-            header = "Straberry Ice Cream",
+            header = "Strawberry Ice Cream",
             txt = "Price: 40$",
             params = {
                 event = "mt-UwUCafe:client:EmentaComidas",
@@ -1253,7 +1253,7 @@ RegisterNetEvent('mt-UwUCafe:client:EmentaComidas', function()
             }
         },
         {
-            header = "Chocolat Ice Cream",
+            header = "Chocolate Ice Cream",
             txt = "Price: 40$",
             params = {
                 event = "mt-UwUCafe:client:EmentaComidas",
@@ -1274,7 +1274,7 @@ RegisterNetEvent('mt-UwUCafe:client:EmentaComidas', function()
             }
         },
         {
-            header = "Chocolat Muffin",
+            header = "Chocolate Muffin",
             txt = "Price: 50$",
             params = {
                 event = "mt-UwUCafe:client:EmentaComidas",
@@ -1302,7 +1302,7 @@ RegisterCommand('ementa-uwu', function()
 end)
 
 -------------------------------------
-------------- Faturar Player --------
+------------- Bill Player --------
 
 RegisterNetEvent("mt-UwUCafe:client:FaturarPlayer", function()
     local dialog = exports['qb-input']:ShowInput({
